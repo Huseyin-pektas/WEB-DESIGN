@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(arkaresim.jpg);
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    height: auto;
+    display: flex;
+    padding: 35px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    color: whitesmoke;
+    margin-left: 35px;
+    margin-top: -15px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bolder;
+    transition: 1s ease;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: red;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    text-align: center;
+}
+.content h1{
+    font-size: 55px;
+    margin-top: 80px;
+    color: red;
+}
+.content p{
+    margin-top: 20px;
+    line-height: 20px;
+}
+button{
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid red;
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: red;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    border-radius: 30px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+button:hover span{
+    width: 100%;
+
+}
+button:hover{
+    border: none;
+
+}
+
+
+
